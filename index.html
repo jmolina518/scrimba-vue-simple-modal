@@ -9,9 +9,11 @@
 <body>
  <div id="app" class="bg-blue-300 h-screen w-full flex justify-center items-center text-sm relative">
 
-  <div class="absolute top-0 w-full bg-green-200 text-center py-2">
+  <div v-if="modal" class="absolute top-0 w-full bg-green-200 text-center py-2">
    Here's some more information.
   </div>
+
+  <button >Open Modal</button>
 
  </div>
 
@@ -19,7 +21,7 @@
   var app = new Vue({
    el: '#app',
    data: {
-
+    modal: false,
    }
   });
  </script>
